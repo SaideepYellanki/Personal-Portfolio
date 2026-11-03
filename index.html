@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellanki Saideep | Portfolio & Resume</title>
+    <meta name="description" content="Personal Portfolio & Digital Resume of Yellanki Saideep - IT Graduate, Software Engineer, Java & Python Developer, IoT & ML Enthusiast.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Background Decoration Grid & Glowing Orbs -->
+    <div class="bg-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+        <div class="bg-grid"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-brand">
+                <span class="brand-initials">YS</span>
+                <span class="brand-name">Saideep<span class="brand-dot">.</span></span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a>
+                <a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a>
+                <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a>
+                <a href="#projects" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a>
+                <a href="#achievements" class="nav-link"><i class="fa-solid fa-trophy"></i> Achievements</a>
+                <a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#contact" class="btn btn-outline nav-cta">Get In Touch</a>
+                <button class="hamburger" id="hamburger" aria-label="Open Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="status-badge pulse">
+                        <span class="pulse-dot"></span> Available for Software Engineer Roles
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Yellanki Saideep</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I build <span class="typed-text" id="typedText"></span><span class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="hero-description">
+                        Information Technology graduate passionate about building scalable backend systems, intelligent IoT applications, and machine learning solutions. Strong expertise in <strong>Java</strong>, <strong>Python</strong>, <strong>SQL</strong>, and data structures.
+                    </p>
+                    
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary btn-glow">
+                            <i class="fa-solid fa-rocket"></i> Explore My Work
+                        </a>
+                        <a href="mailto:saideepyellanki9@gmail.com" class="btn btn-secondary">
+                            <i class="fa-solid fa-envelope"></i> Email Me
+                        </a>
+                        <button class="btn btn-outline" id="resumeModalBtn">
+                            <i class="fa-solid fa-file-pdf"></i> Quick Resume
+                        </button>
+                    </div>
+
+                    <div class="hero-socials">
+                        <span class="social-label">Connect:</span>
+                        <a href="https://linkedin.com/in/saideep-yellanki" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:saideepyellanki9@gmail.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="tel:+919177377695" aria-label="Phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-ring"></div>
+                        <img src="assets/avatar.jpg" alt="Yellanki Saideep Avatar" class="avatar-img">
+                        
+                        <!-- Floating Tech Badges -->
+                        <div class="floating-badge badge-1">
+                            <i class="fa-brands fa-java text-orange"></i> Java & OOP
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i class="fa-brands fa-python text-blue"></i> Python & ML
+                        </div>
+                        <div class="floating-badge badge-3">
+                            <i class="fa-solid fa-microchip text-teal"></i> ESP32 IoT
+                        </div>
+                        <div class="floating-badge badge-4">
+                            <i class="fa-solid fa-database text-yellow"></i> MySQL & Data
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag"><i class="fa-solid fa-circle-info"></i> Background</span>
+                    <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <div class="about-text">
+                            <h3><i class="fa-solid fa-graduation-cap"></i> Driven IT Graduate & Problem Solver</h3>
+                            <p>
+                                I am an <strong>Information Technology graduate</strong> from St. Martin's Engineering College, Hyderabad, with a strong foundation in Java backend engineering, Python, SQL, and object-oriented programming.
+                            </p>
+                            <p>
+                                Hands-on experience gained through a <strong>Java Development Internship at NILTECH-EDU</strong> and technical projects in <strong>IoT safety systems</strong> and <strong>Machine Learning analytics</strong>. Passionate about software architecture, clean code, algorithmic problem-solving, and building high-impact scalable applications.
+                            </p>
+                            
+                            <div class="info-meta-list">
+                                <div class="meta-item">
+                                    <span class="meta-icon"><i class="fa-solid fa-location-dot"></i></span>
+                                    <div>
+                                        <span class="meta-title">Location</span>
+                                        <span class="meta-value">Kamareddy / Hyderabad, Telangana, India</span>
+                                    </div>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-icon"><i class="fa-solid fa-envelope"></i></span>
+                                    <div>
+                                        <span class="meta-title">Email</span>
+                                        <span class="meta-value">saideepyellanki9@gmail.com</span>
+                                    </div>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-icon"><i class="fa-solid fa-phone"></i></span>
+                                    <div>
+                                        <span class="meta-title">Phone</span>
+                                        <span class="meta-value">+91-9177377695</span>
+                                    </div>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-icon"><i class="fa-solid fa-award"></i></span>
+                                    <div>
+                                        <span class="meta-title">Undergraduate Degree</span>
+                                        <span class="meta-value">B.Tech in IT (2022 – 2026)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Stat Cards -->
+                    <div class="stats-grid">
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <div class="stat-number" data-target="8.17">0</div>
+                            <div class="stat-label">B.Tech CGPA (IT)</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+                            <div class="stat-number" data-target="10.0">0</div>
+                            <div class="stat-label">Secondary GPA (10/10)</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                            <div class="stat-number" data-target="2">0</div>
+                            <div class="stat-label">Major Tech Projects Led</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon"><i class="fa-solid fa-percent"></i></div>
+                            <div class="stat-number" data-target="94.1">0</div>
+                            <div class="stat-label">% Higher Secondary Score</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag"><i class="fa-solid fa-screwdriver-wrench"></i> Technical Toolkit</span>
+                    <h2 class="section-title">Skills & <span class="text-gradient">Proficiencies</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Skill Category Filter Buttons -->
+                <div class="skill-filters">
+                    <button class="filter-btn active" data-filter="all">All Skills</button>
+                    <button class="filter-btn" data-filter="languages">Languages</button>
+                    <button class="filter-btn" data-filter="analytics">Data & Tools</button>
+                    <button class="filter-btn" data-filter="core">Core CS</button>
+                    <button class="filter-btn" data-filter="soft">Soft Skills</button>
+                </div>
+
+                <div class="skills-grid" id="skillsGrid">
+                    
+                    <!-- Languages -->
+                    <div class="skill-card glass-card" data-category="languages">
+                        <div class="skill-head">
+                            <div class="skill-icon java-bg"><i class="fa-brands fa-java"></i></div>
+                            <div class="skill-info">
+                                <h3>Java</h3>
+                                <span class="skill-level">Advanced / Backend</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Object-Oriented Programming, Backend Logic, Enterprise Architecture & Data Structures.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 88%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="languages">
+                        <div class="skill-head">
+                            <div class="skill-icon python-bg"><i class="fa-brands fa-python"></i></div>
+                            <div class="skill-info">
+                                <h3>Python</h3>
+                                <span class="skill-level">Machine Learning & IoT</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Machine Learning (K-Means), Data Pipelines, IoT integration & Scripting.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="languages">
+                        <div class="skill-head">
+                            <div class="skill-icon sql-bg"><i class="fa-solid fa-database"></i></div>
+                            <div class="skill-info">
+                                <h3>SQL & MySQL</h3>
+                                <span class="skill-level">Relational Databases</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Complex queries, Schema design, DBMS optimization & Data manipulation.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 82%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="languages">
+                        <div class="skill-head">
+                            <div class="skill-icon html-bg"><i class="fa-brands fa-html5"></i></div>
+                            <div class="skill-info">
+                                <h3>HTML & Web Basics</h3>
+                                <span class="skill-level">Frontend Fundamentals</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Semantic HTML5 markup, responsive layouts, & web interface integration.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Data Analytics -->
+                    <div class="skill-card glass-card" data-category="analytics">
+                        <div class="skill-head">
+                            <div class="skill-icon analytics-bg"><i class="fa-solid fa-chart-pie"></i></div>
+                            <div class="skill-info">
+                                <h3>Data Analytics</h3>
+                                <span class="skill-level">Pattern Discovery</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Statistical insight generation, data visualization dashboards & predictive modeling.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 84%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="analytics">
+                        <div class="skill-head">
+                            <div class="skill-icon excel-bg"><i class="fa-file-excel fa-regular"></i></div>
+                            <div class="skill-info">
+                                <h3>MS Excel</h3>
+                                <span class="skill-level">Data Structuring</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Advanced formulas, data cleaning, pivot tables & performance reports.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 78%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Core CS -->
+                    <div class="skill-card glass-card" data-category="core">
+                        <div class="skill-head">
+                            <div class="skill-icon core-bg"><i class="fa-solid fa-network-wired"></i></div>
+                            <div class="skill-info">
+                                <h3>Data Structures & Algorithms</h3>
+                                <span class="skill-level">Problem Solving</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Arrays, Trees, Graphs, Sorting/Searching & Algorithmic Efficiency (Big-O).</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="core">
+                        <div class="skill-head">
+                            <div class="skill-icon core-bg"><i class="fa-solid fa-server"></i></div>
+                            <div class="skill-info">
+                                <h3>DBMS & Operating Systems</h3>
+                                <span class="skill-level">Computer Science Core</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">ACID properties, indexing, process management, memory management & concurrency.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 82%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="core">
+                        <div class="skill-head">
+                            <div class="skill-icon core-bg"><i class="fa-solid fa-diagram-next"></i></div>
+                            <div class="skill-info">
+                                <h3>SDLC & Agile</h3>
+                                <span class="skill-level">Software Engineering</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Software Lifecycle phases, requirements analysis, modular coding & version control.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skill-card glass-card" data-category="soft">
+                        <div class="skill-head">
+                            <div class="skill-icon soft-bg"><i class="fa-solid fa-users"></i></div>
+                            <div class="skill-info">
+                                <h3>Team Leadership</h3>
+                                <span class="skill-level">Project Management</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Led cross-functional teams of 3-4 members, delegated tasks & delivered projects on schedule.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="soft">
+                        <div class="skill-head">
+                            <div class="skill-icon soft-bg"><i class="fa-solid fa-lightbulb"></i></div>
+                            <div class="skill-info">
+                                <h3>Problem Solving & Docs</h3>
+                                <span class="skill-level">Analytical Thinking</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Root-cause diagnosis, structured code documentation & technical report writing.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 88%"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE & EDUCATION SECTION -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag"><i class="fa-solid fa-timeline"></i> Journey</span>
+                    <h2 class="section-title">Experience & <span class="text-gradient">Education</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="timeline-container">
+                    
+                    <!-- WORK EXPERIENCE -->
+                    <div class="timeline-group">
+                        <h3 class="timeline-group-title"><i class="fa-solid fa-briefcase"></i> Work Experience</h3>
+                        
+                        <div class="timeline-item glass-card">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div>
+                                        <h4 class="timeline-title">Java Development Intern</h4>
+                                        <span class="timeline-company"><i class="fa-solid fa-building"></i> NILTECH-EDU</span>
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Nov 2024 – Dec 2024</span>
+                                        <span class="timeline-badge"><i class="fa-solid fa-globe"></i> Remote</span>
+                                    </div>
+                                </div>
+                                <ul class="timeline-bullets">
+                                    <li>Gained hands-on experience in Java backend development, working with Object-Oriented Programming (OOP) principles and enterprise application architecture.</li>
+                                    <li>Successfully completed certified internship program demonstrating industry-ready skills in backend logic, clean code practices, and system implementation.</li>
+                                </ul>
+                                <div class="pill-tags">
+                                    <span>Java</span>
+                                    <span>OOP</span>
+                                    <span>Backend Architecture</span>
+                                    <span>Software Engineering</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EDUCATION -->
+                    <div class="timeline-group">
+                        <h3 class="timeline-group-title"><i class="fa-solid fa-graduation-cap"></i> Academic Background</h3>
+                        
+                        <div class="timeline-item glass-card">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div>
+                                        <h4 class="timeline-title">Bachelor of Technology in Information Technology</h4>
+                                        <span class="timeline-company"><i class="fa-solid fa-university"></i> St. Martin’s Engineering College</span>
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Aug 2022 – May 2026</span>
+                                        <span class="timeline-location"><i class="fa-solid fa-location-dot"></i> Hyderabad, India</span>
+                                    </div>
+                                </div>
+                                <p class="timeline-score"><strong>CGPA:</strong> <span class="highlight-pill">8.17 / 10.0</span></p>
+                                <p class="timeline-desc">Specialized in Java Backend, Database Management Systems, Data Structures & Algorithms, and IoT System Integration.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item glass-card">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div>
+                                        <h4 class="timeline-title">Higher Secondary Education (Class XII)</h4>
+                                        <span class="timeline-company"><i class="fa-solid fa-school"></i> Sri Chaitanya Junior College</span>
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <span class="timeline-date"><i class="fa-regular fa-calendar"></i> June 2020 – May 2022</span>
+                                        <span class="timeline-location"><i class="fa-solid fa-location-dot"></i> Hyderabad, India</span>
+                                    </div>
+                                </div>
+                                <p class="timeline-score"><strong>Score:</strong> <span class="highlight-pill">94.1%</span></p>
+                                <p class="timeline-desc">Mathematics, Physics, and Chemistry stream focus with top academic standing.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item glass-card">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div>
+                                        <h4 class="timeline-title">Secondary Education (Class X)</h4>
+                                        <span class="timeline-company"><i class="fa-solid fa-school-flag"></i> SPR School</span>
+                                    </div>
+                                    <div class="timeline-meta">
+                                        <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Passed May 2020</span>
+                                        <span class="timeline-location"><i class="fa-solid fa-location-dot"></i> Kamareddy, India</span>
+                                    </div>
+                                </div>
+                                <p class="timeline-score"><strong>GPA:</strong> <span class="highlight-pill">10.0 / 10.0 (Perfect Score)</span></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio Showcase</span>
+                    <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Project Card 1 -->
+                    <div class="project-card glass-card">
+                        <div class="project-banner iot-banner">
+                            <div class="project-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+                            <span class="project-badge">IoT & Real-Time</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Smart Fire Detection & Surveillance System</h3>
+                            <div class="project-tags">
+                                <span class="ptag">ESP32 CAM</span>
+                                <span class="ptag">IoT</span>
+                                <span class="ptag">Python</span>
+                                <span class="ptag">Real-time Systems</span>
+                            </div>
+                            <p class="project-summary">
+                                Engineered an intelligent IoT-based emergency response and safety system integrating real-time fire detection with live video surveillance.
+                            </p>
+                            <ul class="project-points">
+                                <li><i class="fa-solid fa-circle-check"></i> Engineered IoT hardware integration with ESP32 CAM for live video feed capabilities.</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Led cross-functional team of 4 members, coordinating hardware integration & software testing.</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Implemented automated alert mechanisms to accelerate emergency response for rescue teams.</li>
+                            </ul>
+                            <div class="project-actions">
+                                <button class="btn btn-sm btn-primary open-project-modal" data-project="project1">
+                                    <i class="fa-solid fa-circle-info"></i> Project Details
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card glass-card">
+                        <div class="project-banner ml-banner">
+                            <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <span class="project-badge">Machine Learning</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">CrimeCast: Crime Rate Analysis & Prediction</h3>
+                            <div class="project-tags">
+                                <span class="ptag">Python</span>
+                                <span class="ptag">Machine Learning</span>
+                                <span class="ptag">K-Means</span>
+                                <span class="ptag">Data Analysis</span>
+                            </div>
+                            <p class="project-summary">
+                                Developed a machine learning solution to analyze historical crime datasets, identify spatial crime clusters, and forecast pattern shifts.
+                            </p>
+                            <ul class="project-points">
+                                <li><i class="fa-solid fa-circle-check"></i> Utilized K-Means clustering algorithm to analyze & predict crime patterns from historical data.</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Led a 3-member team in implementing an end-to-end data processing pipeline for large datasets.</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Created an interactive visualization dashboard for proactive crime prevention strategies.</li>
+                            </ul>
+                            <div class="project-actions">
+                                <button class="btn btn-sm btn-primary open-project-modal" data-project="project2">
+                                    <i class="fa-solid fa-circle-info"></i> Project Details
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS & LEADERSHIP SECTION -->
+        <section id="achievements" class="section achievements-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag"><i class="fa-solid fa-award"></i> Highlights</span>
+                    <h2 class="section-title">Achievements & <span class="text-gradient">Leadership</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="achievements-grid">
+                    <div class="achievement-card glass-card">
+                        <div class="achievement-icon-wrapper">
+                            <i class="fa-solid fa-users-gear"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Project Leadership</h3>
+                            <p>Successfully led <strong>2 technical projects</strong> from conception to final deployment, managing cross-functional teams of <strong>3 to 4 members</strong> with consistent on-time delivery, code review, and high quality outcomes.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card glass-card">
+                        <div class="achievement-icon-wrapper">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Academic Excellence</h3>
+                            <p>Achieved a perfect <strong>10.0/10.0 GPA</strong> in secondary school, <strong>94.1%</strong> in higher secondary education, and maintained a high <strong>8.17 CGPA</strong> throughout B.Tech in Information Technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag"><i class="fa-solid fa-comments"></i> Get In Touch</span>
+                    <h2 class="section-title">Contact <span class="text-gradient">Me</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-wrapper">
+                    
+                    <div class="contact-info-col">
+                        <div class="glass-card contact-card-main">
+                            <h3>Let's Connect & Collaborate!</h3>
+                            <p>I am actively seeking entry-level <strong>Software Engineer</strong>, <strong>Java Developer</strong>, or <strong>Data Analyst</strong> opportunities. Feel free to reach out via email, phone, or LinkedIn!</p>
+                            
+                            <div class="contact-links">
+                                <a href="mailto:saideepyellanki9@gmail.com" class="contact-item">
+                                    <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                                    <div class="c-details">
+                                        <span class="c-label">Email</span>
+                                        <span class="c-value">saideepyellanki9@gmail.com</span>
+                                    </div>
+                                    <button class="copy-btn" data-copy="saideepyellanki9@gmail.com" title="Copy Email">
+                                        <i class="fa-regular fa-copy"></i>
+                                    </button>
+                                </a>
+
+                                <a href="tel:+919177377695" class="contact-item">
+                                    <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                                    <div class="c-details">
+                                        <span class="c-label">Phone</span>
+                                        <span class="c-value">+91-9177377695</span>
+                                    </div>
+                                    <button class="copy-btn" data-copy="+919177377695" title="Copy Phone">
+                                        <i class="fa-regular fa-copy"></i>
+                                    </button>
+                                </a>
+
+                                <a href="https://linkedin.com/in/saideep-yellanki" target="_blank" rel="noopener" class="contact-item">
+                                    <div class="c-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                    <div class="c-details">
+                                        <span class="c-label">LinkedIn</span>
+                                        <span class="c-value">linkedin.com/in/saideep-yellanki</span>
+                                    </div>
+                                    <div class="c-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                                </a>
+
+                                <div class="contact-item">
+                                    <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div class="c-details">
+                                        <span class="c-label">Location</span>
+                                        <span class="c-value">Kamareddy, Telangana, India</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-col">
+                        <form class="glass-card contact-form" id="contactForm">
+                            <h3>Send Message</h3>
+                            
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-regular fa-user"></i>
+                                    <input type="text" id="name" required placeholder="John Doe">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <input type="email" id="email" required placeholder="john@example.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <input type="text" id="subject" required placeholder="Job Opportunity / Project Inquiry">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="4" required placeholder="Write your message here..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block btn-glow">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                            
+                            <div class="form-status" id="formStatus"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#hero" class="footer-brand">YS<span>.</span></a>
+                <p>Designed for recruiters & engineers • Yellanki Saideep Portfolio</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2026 Yellanki Saideep. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- PROJECT DETAILS MODAL -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- QUICK RESUME MODAL -->
+    <div class="modal-overlay" id="resumeModal">
+        <div class="modal-content glass-card resume-modal-card">
+            <button class="modal-close" id="resumeModalClose">&times;</button>
+            <div class="resume-modal-header">
+                <h2>Yellanki Saideep - Resume Overview</h2>
+                <a href="mailto:saideepyellanki9@gmail.com" class="btn btn-sm btn-primary">
+                    <i class="fa-solid fa-envelope"></i> Request Full PDF
+                </a>
+            </div>
+            <div class="resume-preview-body">
+                <div class="r-section">
+                    <h4><i class="fa-solid fa-user"></i> Professional Summary</h4>
+                    <p>Information Technology graduate with strong knowledge of Java, Python, SQL, and Object-Oriented Programming. Hands-on experience through a Java development internship and academic projects in IoT and Machine Learning. Seeking an entry-level Software Engineer role.</p>
+                </div>
+                <div class="r-section">
+                    <h4><i class="fa-solid fa-graduation-cap"></i> Education</h4>
+                    <ul>
+                        <li><strong>St. Martin’s Engineering College:</strong> B.Tech in IT (2022-2026) | CGPA: 8.17/10.0</li>
+                        <li><strong>Sri Chaitanya Junior College:</strong> Higher Secondary (2020-2022) | 94.1%</li>
+                        <li><strong>SPR School:</strong> Secondary Education (2020) | GPA: 10.0/10.0</li>
+                    </ul>
+                </div>
+                <div class="r-section">
+                    <h4><i class="fa-solid fa-briefcase"></i> Experience</h4>
+                    <p><strong>Java Development Intern</strong> at NILTECH-EDU (Nov 2024 – Dec 2024)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
